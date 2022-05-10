@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -5,8 +9,22 @@
     scroll-behavior: smooth;
 }
 
+body{
+    font-family: Poppins, sans-serif;
+}
+
+h2{
+    font-weight: 600;
+    font: 36px;
+}
+
+h3{
+    font: 28px;
+    font-weight: 600;
+}
+
 .sidebar{
-    background-color: black;
+    background-color:  #1d1e1f;
     color: white;
     height: 100vh;
     width: 250px;
@@ -16,15 +34,65 @@
 section{
     margin-left: 250px;
     /* position: absolute; */
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
+#landing{
+    background-image: url(/software-development-6523979_1920.jpg);
+    object-fit: cover;
+}
+
+#landing{
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(12, 12, 12, 0.7), 
+      rgba(17, 17, 17, 0.7)
+    ),
+    /* bottom, image */
+    url(/software-development-6523979_1920.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
 #about{
-    background-color: #4c4d4d;
+    background-color: #212529;
 }
 
 #resume{
-   background-color: #2f2d2d;
+   background-color: #4c4d4d;
+   min-height: 100vh;
 }
 
+.text-muted {
+    color: #8e9a9d !important;
+}
+
+.nav-link{
+    border-bottom: none;
+}
+
+body {
+    background: #dddddd;
+    color: #212529;
+}
+
+#portfolio{
+    background-color: #212529 !important;
+}
+
+#testimonials{
+    background-color: #4c4d4d !important;
+}
+
+#contact{
+    background-color: #212529;
+}
+
+#footer{
+    background-color: #4c4d4d !important;
+    margin-left: 250px;
+}
